@@ -1,0 +1,22 @@
+:root{--max-width:1000px;--pad:16px;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+*{box-sizing:border-box}
+body{margin:0;color:#222;line-height:1.45}
+.wrap{max-width:var(--max-width);margin:0 auto;padding:var(--pad)}
+.site-header{background:#f6f4f2;padding:24px 0;text-align:center}
+.brand{font-size:28px;margin:0;letter-spacing:1px}
+.tagline{margin:6px 0 0;color:#666}
+
+.intro{padding:18px 0}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:14px 0}
+.gallery figure{margin:0;background:#fff;padding:8px;border:1px solid #eee;border-radius:6px;text-align:center}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:4px}
+figcaption{margin-top:8px;font-size:14px;color:#555}
+
+.contact{padding:10px 0}
+.contact a{color:inherit;text-decoration:underline}
+
+.site-footer{border-top:1px solid #eee;padding:12px 0;text-align:center;color:#666;font-size:14px}
+@media (max-width:480px){
+  .brand{font-size:22px}
+  .gallery img{height:150px}
+}
